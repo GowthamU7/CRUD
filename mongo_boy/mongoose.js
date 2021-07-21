@@ -1,5 +1,5 @@
 const mg=require('mongoose')
 
-mg.connect('mongodb://127.0.0.1:27017/Employee',{useCreateIndex:true,useFindAndModify:false,useNewUrlParser:true,useUnifiedTopology:true})
+mg.connect('mongodb+srv://sai:saisai99122@cluster0.0fn1n.mongodb.net/CRUD?retryWrites=true&w=majority',{useCreateIndex:true,useFindAndModify:false,useNewUrlParser:true,useUnifiedTopology:true})
 
 
