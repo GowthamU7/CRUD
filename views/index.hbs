@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/icon.png">
+</head>
+    <body>
+        <div class="leftdiv">
+        <h3>New user</h3>
+        <div class="nwuserh">
+        </div>
+        <div class="nwuserb">
+        </div><br>
+        <button id="newuser_button">Add User</button>
+        </div>
+        <br><br>
+        <center>
+        <table id="dt">
+            <tr>
+                <th> Name </th>
+                <th> Email_Id </th>
+                <th> Sex </th>
+                <th> Age </th>
+                <th>Edit/Delete</th>
+            </tr>
+            <tr>
+                {{serve}}
+            </tr>
+        </table>
+        </center>
+    </body>
+    <script src="/js/index.js"></script>
+</html>

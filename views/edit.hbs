@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Edit user</title>
+        <link rel="stylesheet" href="/css/new_ser_style.css">
+        <link rel="icon" href="/img/icon.png">
+    </head>
+    <body>
+        <center>
+            <form method='POST'>
+                <h3>Edit User Form</h3><button id="del">Delete user</button></tr>
+                <tr>
+                <div class="nwuserh">
+                </div>
+                <div class="nwuserb">
+                </div><br>
+                <label for="name">User-name</label>
+                <input type="text" id="name" name="name" placeholder="     your name" value="{{name}}" required><br><br>
+                <label for="email">Email_Id</label>
+                <input type="email" id="email" name="email_id" placeholder="   email-id" value="{{email_id}}" required><br><br>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="     age" value="{{age}}" required><br><br>
+                <label for="sex">Sex</label>
+                <select name="sex" id="sex" value="{{sex}}" required><br><br>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select><br><br>
+                <button id="reg">Save Changes</button><br><br>
+                {{error}}
+            </form>
+        </center>
+    </body>
+    <script src="/js/edit.js"></script>
+</html>
