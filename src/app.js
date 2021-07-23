@@ -4,15 +4,16 @@ const http=require('http')
 const pt=require('path')
 const { findById } = require('../model/user_model')
 require('../mongo_boy/mongoose')
+const hbs=require('hbs')
 const user=require('../model/user_model')
 const port=process.env.PORT || 3000
 const pub=pt.join(__dirname,'../public')
-const da=require('../public/js/data')
+const part=pt.join(__dirname,'../partials')
 app.use(exp.json())
 app.set('view engine','hbs')
 app.use(exp.urlencoded({extended:true}))
 app.use(exp.static(pub))
-
+hbs.registerPartials(part)
 
 app.post('/new_user', async(req,res)=>{
     try{
