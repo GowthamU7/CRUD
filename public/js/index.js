@@ -3,7 +3,7 @@ var serv=''
 var mainserv=''
 var field=['name','email_id','sex','age']
 const tabchild=document.getElementById('dt')
-fetch('http://localhost:3000/data_of_the_employees').then((res)=>{
+fetch('/data_of_the_employees').then((res)=>{
     res.json().then((data)=>{
         if(data.error){
             return
