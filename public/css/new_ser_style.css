@@ -5,9 +5,8 @@ body{
 
 
 form{
-    margin-top: 40px;
-    width: 600px;
-    height: 500px;
+    width:auto;
+    height: 400px;
     background-color: lightcoral;
     box-shadow: 2px 8px 2px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -74,4 +73,37 @@ select:hover{
 }
 #del{
     margin-left:300px;
+}
+.icondiv{
+    margin-left: 600px;
+}
+#name{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#namelab{
+    margin-left: 170px;
+}
+#sex{
+
+}
+#email{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#emaillab{
+    margin-left: 170px;
+}
+#agelab{
+    margin-left: 200px;
+}
+#age{
+    margin-left: 10px;
+}
+#sexlab{
+    margin-left: 230px;
+}
+#reg{
+    margin-left: 580px;
+    margin-top: 50px;
 }

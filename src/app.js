@@ -29,7 +29,7 @@ app.post('/new_user', async(req,res)=>{
 
 app.get('', async(req,res)=>{
     try{
-        res.render('index')
+        res.render('index',{ass:"ADD USER",u:"/new_user"})
     }
     catch(e){
         res.send('404')
@@ -45,7 +45,7 @@ app.get('/data_of_the_employees',async(req,res)=>{
 })
 
 app.get('/new_user',(req,res)=>{
-    res.render('new_use')
+    res.render('new_use',{ass:"DELETE USER",u:"/"})
 })
 
 
@@ -55,7 +55,7 @@ app.get('/user/:id', async(req,res)=>{
     var email_id=data.email_id
     var age=data.age
     var sex=data.sex
-    res.render('edit',{name,email_id,age,sex})
+    res.render('edit',{name,email_id,age,sex,ass:"DELETE_USER",u:"/new_user"})
 })
 
 
@@ -70,7 +70,7 @@ app.post('/user/:id',async (req,res)=>{
             var email_id=data.email_id
             var age=data.age
             var sex=data.sex
-            res.render('edit',{name,email_id,age,sex,error:'Credentilas were aleardy in use'})
+            res.render('edit',{name,email_id,age,sex,error:'Credentilas were aleardy in use',ass:"DELETE USER",u:"/new_user"})
         }
 })
 

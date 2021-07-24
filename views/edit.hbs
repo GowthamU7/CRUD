@@ -1,33 +1,33 @@
 <html>
     <head>
-        <title>Edit user</title>
+        <title>NEW user</title>
         <link rel="stylesheet" href="/css/new_ser_style.css">
         <link rel="icon" href="/img/icon.png">
     </head>
     <body>
-        <center>
-            <form method='POST'>
-                <tr>
+        {{>header}}<br>
+            <form method="POST">
+                <br><br>
+                <div class="icondiv">
                 <div class="nwuserh">
                 </div>
                 <div class="nwuserb">
-                </div><br>
-                <label for="name">User-name</label>
-                <input type="text" id="name" name="name" placeholder="     your name" value="{{name}}" required><br><br>
-                <label for="email">Email_Id</label>
-                <input type="email" id="email" name="email_id" placeholder="   email-id" value="{{email_id}}" required><br><br>
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="     age" value="{{age}}" required><br><br>
-                <label for="sex">Sex</label>
-                <select name="sex" id="sex" value="{{sex}}" required><br><br>
+                </div>
+                </div>
+                <label for="name" id="namelab">User-name</label>
+                <input type="text" id="name" name="name" placeholder="     your name" value="{{name}}"required>
+                <label for="age" id="agelab">Age</label>
+                <input type="number" id="age" name="age" placeholder="     age" min="12" value="{{age}}"required><br><br>
+                <label for="email" id="emaillab">Email_Id</label>
+                <input type="email" id="email" name="email_id" placeholder="   email-id" value="{{email_id}}"required>
+                <label for="sex" id="sexlab">Sex</label>
+                <select name="sex" id="sex" required value="{{sex}}"><br><br>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Others</option>
                 </select><br><br>
-                <button id="reg">Save Changes</button><br><br>
-                {{error}}
+                <button id="reg">Register</button>
             </form>
-        </center>
     </body>
-    <script src="/js/edit.js"></script>
+    <script src="/js/new.js"></script>
 </html>
