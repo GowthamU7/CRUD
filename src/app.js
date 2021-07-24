@@ -55,7 +55,7 @@ app.get('/user/:id', async(req,res)=>{
     var email_id=data.email_id
     var age=data.age
     var sex=data.sex
-    res.render('edit',{name,email_id,age,sex,ass:"DELETE_USER",u:"/new_user"})
+    res.render('edit',{name,email_id,age,sex,ass:"DELETE_USER",u:"/"})
 })
 
 
@@ -70,7 +70,7 @@ app.post('/user/:id',async (req,res)=>{
             var email_id=data.email_id
             var age=data.age
             var sex=data.sex
-            res.render('edit',{name,email_id,age,sex,error:'Credentilas were aleardy in use',ass:"DELETE USER",u:"/new_user"})
+            res.render('edit',{name,email_id,age,sex,error:'Credentilas were aleardy in use',ass:"DELETE_USER",u:"/"})
         }
 })
 
